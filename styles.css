@@ -1,6 +1,7 @@
 body{
-  width: 180px;
+  width: 280px;
   margin: auto;
+  text-align: center;
 }
 
 .loader {
