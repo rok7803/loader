@@ -4,10 +4,10 @@ body{
   text-align: center;
 }
 
-.loader {
+.loader-spining {
   border: 6px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 6px solid orangered;
+  border-top: 6px solid black;
   width: 30px;
   height: 30px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
@@ -24,4 +24,190 @@ body{
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+.loader-boarder{
+  background-color: #f3f3f3;
+  /*border: 1px solid rgba(70, 68, 68, 0.8);*/
+  width: 150px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.loader-linear {
+  width: 40px;
+  height: 6px;
+  border-radius: 11%;
+  background-size: 200% 200%;
+  /*background-image: linear-gradient(
+  to right,
+  rgb(255, 255, 255) 0%,  
+  rgb(150, 151, 150) 15%, 
+  rgb(78, 78, 78) 30%,  
+  rgb(3, 3, 3) 45%  
+  );*/
+  background-color: rgba(0, 0, 0, 1);
+  -webkit-animation: linearX 2s linear infinite; /* Safari */
+  animation: linearX 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes linearX {
+  from {transform: translateX(-30px);}
+  to {transform: translateX(150px);}
+}
+
+@keyframes linearX {
+  0% {transform: translateX(-30px);}
+  100% {transform: translateX(150px);}
+}
+
+.background-gradient {
+  height: 6px;
+  width: 150px;
+	background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 2s linear infinite; /* Safari */
+  animation: gradient 2s ease-in-out infinite;
+  margin: auto;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.loader-div-wrapper{
+  height: 12px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.loader-div{
+  width: 12px;
+  height: 6px;
+  background-color: #f3f3f3;
+  /*border: 1px solid black;*/
+  overflow: hidden;
+}
+
+.pref-bar{
+  position: relative;
+  height: 6px;
+  width: 12px;
+  background-color: lightskyblue;
+}
+
+.animated1{
+  left: -12px;
+  animation: moveBar1 3s infinite;
+}
+
+@keyframes moveBar1{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(12px);}*/
+  100% {transform: translateX(12px);}
+}
+
+.animated2{
+  left: -24px;
+  animation: moveBar2 3s infinite;
+  /*animation-delay: 2s;*/
+}
+
+@keyframes moveBar2{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(24px);}*/
+  100% {transform: translateX(24px);}
+}
+
+.animated3{
+  left: -36px;
+  animation: moveBar3 3s infinite;
+  /*animation-delay: 3s;*/
+}
+
+@keyframes moveBar3{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(36px);}*/
+  100% {transform: translateX(36px);}
+}
+
+.animated4{
+  left: -48px;
+  animation: moveBar4 3s infinite;
+  /*animation-delay: 4s;*/
+}
+
+@keyframes moveBar4{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(48px);}*/
+  100% {transform: translateX(48px);}
+}
+
+.animated5{
+  left: -60px;
+  animation: moveBar5 3s infinite;
+  /*animation-delay: 5s;*/
+}
+
+@keyframes moveBar5{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(60px);}*/
+  100% {transform: translateX(60px);}
+}
+
+.animated6{
+  left: -72px;
+  animation: moveBar6 3s infinite;
+  /*animation-delay: 6s;*/
+}
+
+@keyframes moveBar6{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(72px);}*/
+  100% {transform: translateX(72px);}
+}
+
+.animated7{
+  left: -84px;
+  animation: moveBar7 3s infinite;
+  /*animation-delay: 7s;*/
+}
+
+@keyframes moveBar7{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(84px);}*/
+  100% {transform: translateX(84px);}
+}
+
+.animated8{
+  left: -96px;
+  animation: moveBar8 3s infinite;
+  /*animation-delay: 6s;*/
+}
+
+@keyframes moveBar8{
+  0% {transform: translateX(0);}
+  /*40% {transform: translateX(96px);}*/
+  100% {transform: translateX(96px);}
 }
